@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: #111;
+
+}
+.card{
+  height: 200px;
+  width: 100%;
+  background-color: #971515;
+  margin: 20px auto;border-radius: 10px;  
+
+}
+.navbar{
+  height: 60px;
+  width: 100%;
+  background-color: #971515;
+  margin: 20px auto;border-radius: 10px;  
+}
