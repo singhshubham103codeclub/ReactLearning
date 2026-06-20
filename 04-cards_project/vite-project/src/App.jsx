@@ -10,23 +10,28 @@ const App = () => {
             src="https://thumbs.dreamstime.com/b/icons-sample-psost-setting-428651105.jpg"
             alt="Icon"
           />
-           <button>save
-          <Bookmark size={10} color="black" />
-        </button>
+          <button>save
+            <Bookmark size={10} color="black" />
+          </button>
         </div>
         <div className="center">
           <h3>Amazone<span> 5 days ago</span></h3>
           <h2>Senior UI/UX Designer</h2>
+          <div className="skills">
+            <span>UI/UX</span>
+            <span>Figma</span>
+            <span>Adobe XD</span>
+          </div>
+          <div className="job-type">
+            <h4>Part time</h4>
+            <h4>Senior Level</h4>
+          </div>
         </div>
-        <h4>Part time</h4>
-        <h4>Senior Level</h4>
         <div className="bottom">
+          <button>Apply Now</button>
           <div>
-            <div>
-              <h3>$120/hr</h3>
-              <p>Mumbai,India</p>
-            </div>
-            <button>Apply Now</button>
+            <h3>$120/hr</h3>
+            <p>Mumbai,India</p>
           </div>
         </div>
       </div>
