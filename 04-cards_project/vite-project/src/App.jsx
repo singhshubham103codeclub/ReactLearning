@@ -1,42 +1,27 @@
 import React from 'react'
-import { Bookmark } from 'lucide-react'
-
+import Card from './components/card.jsx'
+import User from './components/user.jsx'
+import { jobs } from './data/cardsData.js'
 const App = () => {
+  // const users = [
+  //   { id: 1, name: 'John Doe' },
+  //   { id: 2, name: 'Jane Smith' },
+  //   { id: 3, name: 'Alice Johnson' },
+  //   { id: 4, name: 'Bob Brown' },
+  // ];
+  // console.log(users)
+  // console.log(jobs)
   return (
-    <div className="parent">
-      <div className="card">
-        <div className="top-left">
-          <img
-            src="https://thumbs.dreamstime.com/b/icons-sample-psost-setting-428651105.jpg"
-            alt="Icon"
-          />
-          <button>save
-            <Bookmark size={10} color="black" />
-          </button>
-        </div>
-        <div className="center">
-          <h3>Amazone<span> 5 days ago</span></h3>
-          <h2>Senior UI/UX Designer</h2>
-          <div className="skills">
-            <span>UI/UX</span>
-            <span>Figma</span>
-            <span>Adobe XD</span>
-          </div>
-          <div className="job-type">
-            <h4>Part time</h4>
-            <h4>Senior Level</h4>
-          </div>
-        </div>
-        <div className="bottom">
-          <button>Apply Now</button>
-          <div>
-            <h3>$120/hr</h3>
-            <p>Mumbai,India</p>
-          </div>
-        </div>
-      </div>
+    <div className='parent'>
+      {jobs.map(job => (
+        <Card key={job.id}{...job} />
+      ))}
+      {/* {users.map(user => (
+        <User key={user.id} name={user.name} />
+      ))} */}
     </div>
   )
 }
+
 
 export default App
