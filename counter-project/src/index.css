@@ -1,0 +1,68 @@
+
+/* Counter app specific styles */
+/* body{
+  background-color: #111;
+} */
+#root > div {
+  width: 100%;
+  max-width: 520px;
+  margin: 48px auto;
+  padding: 28px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  box-shadow: 0 12px 40px rgba(2,6,23,0.55);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  color: var(--text-h);
+}
+
+#root > div h1{
+  font-size: 24px;
+  margin: 0;
+  color: var(--text-h);
+}
+
+/* Emphasize the numeric value inside the heading if present */
+#root > div h1::after{
+  content: '';
+}
+
+/* Buttons */
+#root > div .controls{display:flex;gap:12px}
+#root > div button{
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+
+/* Specific button colors using order (Increment, Decriment, Reset) */
+#root > div button:nth-of-type(1){
+  background: linear-gradient(180deg,#10b981,#059669);
+  color: white;
+  box-shadow: 0 10px 28px rgba(16,185,129,0.14);
+}
+#root > div button:nth-of-type(2){
+  background: linear-gradient(180deg,#f97316,#ea580c);
+  color: white;
+  box-shadow: 0 10px 28px rgba(249,115,22,0.14);
+}
+#root > div button:nth-of-type(3){
+  background: #e4edff;
+  color: var(--text-h);
+  box-shadow: 0 8px 20px rgba(2,6,23,0.06);
+}
+
+#root > div button:hover{transform: translateY(-3px)}
+#root > div button:active{transform: translateY(0) scale(0.995)}
+
+@media (max-width:480px){
+  #root > div{margin:20px;padding:18px}
+  #root > div .controls{flex-direction:column;width:100%}
+  #root > div button{width:100%}
+}
+
