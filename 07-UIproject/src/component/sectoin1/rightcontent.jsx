@@ -11,4 +11,4 @@ const rightcontent = (props) => {
   )
 }
 
-export default rightcontent
+export default rightcontentcd
