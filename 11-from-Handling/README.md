@@ -1,6 +1,6 @@
 # React Form Handling (`onSubmit` Event)
 
-This project demonstrates how to handle **form submission** in React using the `onSubmit` event and prevent the page from reloading with `event.preventDefault()`.
+This project demonstrates how to  and prevent the page from reloading with `event.preventDefault()`.
 
 ---
 
