@@ -1,9 +1,9 @@
 import React from "react";
-const Home=()=>{
+const women=()=>{
     return (
         <div>
-            <h1>Home page</h1>
+            <h1>Womens collection</h1>
         </div>
     )
 }
-export default Home
+export default women

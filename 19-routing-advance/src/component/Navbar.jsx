@@ -7,6 +7,7 @@ const Navbar = () => {
         <a className="tet-xl font-bold" href="/">HOME</a>
         <a className="tet-xl font-bold" href="/about">ABOUT</a>
         <a className="tet-xl font-bold" href="/contact">CONTACT</a>
+        <a className="tet-xl font-bold" href="/Product">PRODUCT</a>
       </div>
     </div>
   )
