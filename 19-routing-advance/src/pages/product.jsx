@@ -1,28 +1,18 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-// simple nested routing
-// const Product=()=>{
-//     return (
-//         <div>
-//             <div className="flex justify-center gap-10 py-10">
-//                 <Link className="text-xl font-light" to='/product/Mens'>Men</Link>
-//                  <Link className="text-xl font-light" to='/product/Women'>Women</Link>
-//             </div>
-//             <h1>PRODUCT PAGE</h1>
-//         </div>
-//     )
-// }
 
-// better way to nested routing
-const Product=()=>{
+// This page acts as a parent route for product sub-pages.
+// It shows links to child routes and renders the selected child with <Outlet />.
+const Product = () => {
     return (
         <div>
             <div className="flex justify-center gap-10 py-10">
                 <Link className="text-xl font-light" to='/product/Mens'>Men</Link>
-                 <Link className="text-xl font-light" to='/product/Women'>Women</Link>
+                <Link className="text-xl font-light" to='/product/Women'>Women</Link>
             </div>
-            <Outlet/>
+            <Outlet />
         </div>
     )
 }
-export default Product 
+
+export default Product
